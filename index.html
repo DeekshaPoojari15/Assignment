@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+    <script src="js/jqajax.js"></script>
+    <script src="jquery.min.js"></script>
+</head>
+<body >
+    <h1 style="color: grey;">Employees</h1>
+    <br>
+    <p>GET- to get employees details click on the <em>Get Employee</em><p>
+    <br>
+    <button type="submit" id="button" onclick="getEmployeeList()">Get Employees</button>
+    <ul id="employeeList">
+    </ul>
+    <br>
+
+    <p> POST - to add employees click on the <em>Post Employee</em><p>
+    <br>
+    <label for="username">Name:</label>
+    <input type="text" name="username" id="name"><br/><br/>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email"><br/><br/>
+    <input type="submit" value="Post Employee" onclick="addEmployee()" >
+    <br><br>
+
+    <p> PUT - to modify employees click on the <em>Put Employee</em><p>
+    <br>
+    <label for="id">ID:</label>
+    <input type="text" name="id" id="id1"><br><br>
+    <label for="username">Name:</label>
+    <input type="text" name="username" id="name1"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email1"><br><br>
+    <input type="submit" value="Put Employee" onclick="putEmployee()" ><br><br>
+    
+    <p> DELETE - to delete employees click on the <em>Delete Employee</em><p>
+    <br>
+    <label for="id">ID:</label>
+    <input type="text" name="id" id="id"/><br/><br/>
+    <input type="submit" value="Delete Employee" onclick="deleteEmployee()" >
+</body>
+</html>
